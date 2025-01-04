@@ -12,7 +12,8 @@ function calculateElapsedTime(startTime) {
 }
 
 function updateCounter() {
-    const startTime = new Date(); // Change this to your desired start time if needed
+    // Définir la date de départ à 13h44 le 4 janvier 2025
+    const startTime = new Date(2025, 0, 4, 13, 44); // Mois est basé sur 0 (janvier = 0)
     const counterElement = document.getElementById('counter');
 
     setInterval(() => {
